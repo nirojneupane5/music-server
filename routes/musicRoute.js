@@ -9,10 +9,10 @@ import {
 
 const router = express.Router();
 
-router.get("/music", getAllMusic);
-router.get("/music/:id", getMusicById);
-router.post("/music", postMusic);
-router.put("/music/:id", updateMusicById);
-router.delete("/music/:id", deleteMusicById);
+router.get("/", getAllMusic);
+router.get("/:id", getMusicById);
+router.post("/", postMusic);
+router.put("/:id", updateMusicById);
+router.delete("/:id", deleteMusicById);
 
 export default router;
